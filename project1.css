@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://img.lovepik.com/bg/20240104/Enhance-Your-Website-s-Aesthetic-with-a-Vibrant-Rainbow-Colored_2681115_wh860.jpg!/fw/860"), #000;
+    background-position: center;
+    background-size: cover;
+  }
+  .login-wrapper{
+    height:580px;
+    width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid /* rgba(7, 210, 78, 0.912)*/ #FFD700;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition:all 0.3s ease;
+  box-shadow:
+  inset 0 -3em 3em rgb(0 200 0 / 30%)
+  ,0.3em 0.3em 3em rgb(200 0 0 / 60%) ;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  form h2{
+    font-size: 2rem;
+    color:#fff;
+    margin-bottom: 20px;
+    
+  }
+  .input-field{
+    position: relative;
+    border-bottom: 2px solid #e11111;
+    margin: 15px 0;
+  }
+  .input-field input{
+    width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  }
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #9ab911;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+  }
+  .input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+.password-options{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: /*#9ef315*/#ff8601;
+}
+.password-options label{
+    display: flex;
+    align-items: center;
+}
+.password-options label p{
+   margin-left: 8px;
+}
+#remember {
+    accent-color: #713f3f;
+  }
+  .login-wrapper a {
+    color: #05c2db;
+    text-decoration:none;
+  }
+  .login-wrapper:hover a {
+    color: #05c2db;
+    text-decoration:underline;
+  }
+  button{
+    background: #1E9600;  /* fallback for old browsers */
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  color:#031602;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition:all 0.3s ease;
+  }
+  button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    letter-spacing:2px ;
+  }
+  button:hover {
+    font:italic;
+        font-family: cursive;
+    color: #fff;
+    border-color:#FFD700;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .account-option {
+    text-align: center;
+    margin-top: 30px;
+    color:  #0cdc4b;
+   
+    
+  }
+    .option{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        text-align: center;
+        color:#ff8601
+    }
+    .facebook a{
+        margin: 20px 0 20px 0;
+display: block;
+width: 100%;
+height: 25px;
+text-decoration: none;
+font-size: 15px;
+padding-left: 20px;
+background: #0854f8;
+color:#fff;
+line-height: 25px;
+border-radius: 5px;
+transition:all 0.3s ease;
+    }
+    .twitter a{
+        margin: 20px 0 20px 0;
+        display: block;
+        width: 100%;
+        height: 25px;
+        text-decoration: none;
+        font-size: 15px;
+        padding-left: 20px;
+        background: #0092d5;
+        color:#fff;
+        line-height: 25px;
+        border-radius: 5px;
+        transition:all 0.3s ease;
+    }
+    .facebook i {
+        padding-right:12px;
+    }
+    .twitter i{
+        padding-right:10px;
+    }
+    .facebook a:hover {
+        font:italic;
+        font-family: cursive;
+        font-size: 20px;
+        border-color:#FFD700;
+        background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .twitter a:hover {
+        font:italic;
+        font-family: cursive;
+        font-size: 20px;
+        border-color:#FFD700;
+        background:background: #c31432;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+      }
